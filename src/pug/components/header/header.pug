@@ -1,3 +1,22 @@
 header.header 
   .container 
-    h1 HEADER
+    .header__inner 
+      a.logo(href="index.html") 
+        svg(width="35px" height="36.23px") 
+          use(href="#logo-icon")
+        |Lasles<b>VPN</b>
+      nav.nav.header__nav
+        ul.nav__list
+          li.nav__item
+            a.nav__link(href="#") About
+          li.nav__item
+            a.nav__link(href="#") Features
+          li.nav__item
+            a.nav__link(href="#") Pricing
+          li.nav__item
+            a.nav__link(href="#") Testimonials
+          li.nav__item
+            a.nav__link(href="#") Help
+      .header__actions.actions 
+        a.actions__link(href="#") Sign In
+        a.actions__link.actions__link_btn(href="#") Sing Up
