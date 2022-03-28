@@ -1,0 +1,13 @@
+@import 'app/vars.scss';
+@import 'app/fonts.scss';
+@import 'app/interface.scss';
+/* -------------------------- */
+
+/* -------- Header --------*/
+@import 'pages/header.scss';
+
+/* -------- * --------*/
+//@import 'pages/*.scss';
+
+/* -------- Footer --------*/
+@import 'pages/footer.scss';
