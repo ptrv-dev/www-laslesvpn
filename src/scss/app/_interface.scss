@@ -56,3 +56,12 @@ p {
         border-radius: 10px;
     }
 }
+.section {
+    padding: 80px 0;
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        line-height: 30px;
+    }
+}
