@@ -49,14 +49,8 @@
         color: $dark;
         text-decoration: none;
         margin-right: 30px;
-        &_btn {
-            padding: 13px 45px;
-            color: $red;
-            border: 1px solid $red;
-            border-radius: 50px;
-        }
-        &:last-child {
-            margin-right: 0;
-        }
+    }
+    &__btn {
+        padding: 13px 45px;
     }
 }
