@@ -40,6 +40,10 @@
         line-height: 19px;
         color: $gray;
         text-decoration: none;
+        transition: color 0.2s ease-in-out;
+        &:hover {
+            color: $dark;
+        }
     }
 }
 .actions {
