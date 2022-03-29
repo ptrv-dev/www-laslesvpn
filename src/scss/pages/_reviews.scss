@@ -1,0 +1,118 @@
+.slider {
+    display: flex;
+    flex-direction: column;
+    &__row {
+        display: flex;
+        margin-bottom: 60px;
+    }
+}
+.slider-item {
+    flex: 0 0 35%;
+    margin-right: 50px;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        border-color: $red;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    &__review {
+        line-height: 30px;
+        color: $dark;
+    }
+    &__header {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__col {
+        display: flex;
+        &_small {
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 20px;
+        }
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+    &__count {
+        color: $dark;
+        margin-right: 10px;
+    }
+    &_active {
+        border-color: $red;
+    }
+}
+.slider-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__dots {
+        display: flex;
+    }
+    &__dot {
+        background: #dde0e4;
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        margin-right: 15px;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        &:last-child {
+            margin-right: 0;
+        }
+        &_active {
+            background: $red;
+            width: 45px;
+        }
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 2px solid $red;
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+        cursor: pointer;
+        svg {
+            width: 20px;
+            height: 17.5px;
+            fill: $red;
+        }
+        &_prev {
+            svg {
+                transform: rotateZ(180deg);
+            }
+        }
+        transition: all .3s ease-in-out;
+        &:hover {
+            background: $red;
+            svg {
+                fill: $white;
+            }
+        }
+    }
+}

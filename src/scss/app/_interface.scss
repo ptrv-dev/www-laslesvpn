@@ -9,6 +9,7 @@ body {
     font-size: $fz;
     color: $fc;
     background: $body-color;
+    overflow-x: hidden;
 }
 
 .container {
