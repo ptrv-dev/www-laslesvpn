@@ -21,7 +21,7 @@
 /* -------- Sub --------*/
 @import 'pages/sub.scss';
 /* -------- * --------*/
-//@import 'pages/*.scss';
+@import 'pages/adaptive.scss';
 
 /* -------- Footer --------*/
 @import 'pages/footer.scss';
