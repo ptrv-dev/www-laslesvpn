@@ -1,5 +1,30 @@
 console.log("JavaScript is working!");
 
+const burger = document.querySelector(".nav-burger"),
+    actions = document.querySelector(".actions"),
+    nav = document.querySelector(".nav");
+
+burger.addEventListener("click", function (e) {
+    e.preventDefault(false);
+    if (burger.classList.contains("nav-burger_active")) {
+        burger.classList.remove("nav-burger_active");
+        actions.classList.remove("actions_active");
+        nav.classList.remove("nav_active");
+    } else {
+        burger.classList.add("nav-burger_active");
+        actions.classList.add("actions_active");
+        nav.classList.add("nav_active");
+    }
+});
+
+const container = document.querySelector('.container');
+
+console.log(container.style.width);
+
+if (container.offsetWidth <= 768) {
+    nav.appendChild(actions);
+}
+
 const slides = document.querySelectorAll(".slider-item"),
     dots = document.querySelectorAll(".slider-nav__dot"),
     prev = document.getElementsByClassName("slider-nav__btn_prev")[0],
