@@ -17,7 +17,7 @@ burger.addEventListener("click", function (e) {
     }
 });
 
-const container = document.querySelector('.container');
+const container = document.querySelector(".container");
 
 console.log(container.style.width);
 
@@ -80,3 +80,39 @@ slides.forEach((element, i) => {
 });
 
 setCurrentSlide(index);
+
+const signup = document.getElementById("signup-btn");
+const body = document.querySelector("body");
+const modal = document.getElementById("signup-modal");
+const modalClose = document.querySelector(".modal__close");
+
+signup.addEventListener("click", (e) => {
+    e.preventDefault(false);
+    if (modal.classList.contains("modal_visibility")) {
+        modal.classList.remove("modal_visibility");
+        body.classList.remove("body_noscroll");
+    } else {
+        body.classList.add("body_noscroll");
+        modal.classList.add("modal_visibility");
+        burger.classList.remove("nav-burger_active");
+        actions.classList.remove("actions_active");
+        nav.classList.remove("nav_active");
+    }
+});
+
+modalClose.addEventListener("click", (e) => {
+    e.preventDefault(false);
+    if (modal.classList.contains("modal_visibility")) {
+        modal.classList.remove("modal_visibility");
+        body.classList.remove("body_noscroll");
+    }
+});
+
+document.addEventListener("keydown", function (event) {
+    if (event.key == "Escape") {
+        if (modal.classList.contains("modal_visibility")) {
+            modal.classList.remove("modal_visibility");
+            body.classList.remove("body_noscroll");
+        }
+    }
+});

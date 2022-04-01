@@ -1,6 +1,6 @@
 doctype html
 block vars
-html(lang="en")
+html(lang="en").body
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
@@ -11,7 +11,7 @@ html(lang="en")
     link(rel='icon' type='image/png' sizes='16x16' href='./img/favicon/favicon-16x16.png')
     link(rel="stylesheet", href="css/libs/normalize.min.css")
     link(rel="stylesheet", href="css/main.min.css")
-  body
+  body.body
     include ../components/header/header
     block body
     include ../components/footer/footer
